@@ -4,7 +4,9 @@ Generates generic townsfolk-style NPCs for Dungeons and Dragons 5th Edition
 # Usability Stuff
 This was written in Powershell. You will need Powershell on your machine to make it run.
 
-You will also need to change the directories where things are stored and retrieved from. I've called out the two places you'll need to do this in the upper part of the script.
+invoke with the following command arguments
+* `-OutputToHere <path>`
+* `-DataFile <path>`
 
 This script will output the character in HTML.
 
@@ -15,6 +17,23 @@ Future versions will probably have other outputs.
 There may or may not be future versions.
 
 It doesn't use anything fancy, it's just a handful of data arranged with DIVs.
+
+## Docker Usage
+
+To use with docker. First install docker and then...
+
+```
+make build
+make run
+```
+
+output will be in **build/out.html**.
+
+```
+make out
+```
+
+Can be used to view the output.
 
 # Purpose Stuff
 The purpose of this script is to make generating random townsfolk NPCs easier for the DM.
