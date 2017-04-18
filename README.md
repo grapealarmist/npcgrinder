@@ -1,6 +1,6 @@
 # npcgrinder
 Generates generic townsfolk-style NPCs for Dungeons and Dragons 5th Edition
----
+
 # Usability Stuff
 This was written in Powershell. You will need Powershell on your machine to make it run.
 
@@ -11,7 +11,7 @@ I figured everyone has a browser, so that's a pretty universal format.
 Future versions will probably have other outputs.
 There may or may not be future versions.
 It doesn't use anything fancy, it's just a handful of data arranged with DIVs.
----
+
 # Purpose Stuff
 The purpose of this script is to make generating random townsfolk NPCs easier for the DM.
 I typically keep ten of them printed out and ready to go for an adventure.
