@@ -16,6 +16,23 @@ There may or may not be future versions.
 
 It doesn't use anything fancy, it's just a handful of data arranged with DIVs.
 
+## Docker Usage
+
+To use with docker. First install docker and then...
+
+```
+make build
+make run
+```
+
+output will be in **build/out.html**.
+
+```
+make out
+```
+
+Can be used to view the output.
+
 # Purpose Stuff
 The purpose of this script is to make generating random townsfolk NPCs easier for the DM.
 
