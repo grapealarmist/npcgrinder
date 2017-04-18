@@ -4,7 +4,9 @@ Generates generic townsfolk-style NPCs for Dungeons and Dragons 5th Edition
 # Usability Stuff
 This was written in Powershell. You will need Powershell on your machine to make it run.
 
-You will also need to change the directories where things are stored and retrieved from. I've called out the two places you'll need to do this in the upper part of the script.
+invoke with the following command arguments
+* `-OutputToHere <path>`
+* `-DataFile <path>`
 
 This script will output the character in HTML.
 
