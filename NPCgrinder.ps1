@@ -1,6 +1,6 @@
 ﻿<#
     File: NPCgrinder.ps1
-    Version: 12
+    Version: 13
     Modified: 2017-04-17
 
     !!
@@ -13,27 +13,13 @@
     2. The ouput file location
 #>
 
-###############################################################################
-#                                                                             #
-#                                                                             #
-#          Right below this is where you change the JSON file lcation.        #
-#                                                                             #
-#               If you don't do this, you won't have much luck.               #
-#                                                                             #
-#                                                                             #
-###############################################################################
+param (
+    [string]$OutputToHere = 'C:\Example\OutTest.html',
+    [string]$DataFile = 'C:\Example\NPCgrinderData.json'
 
-$JSONdata = Get-Content 'C:\Example\NPCgrinderData.json' | ConvertFrom-Json
+)
 
-###############################################################################
-#                                                                             #
-#                                                                             #
-#          You will also need to set a destination for the HTML output.       #
-#                                                                             #
-#                                                                             #
-###############################################################################
-
-$OutputToHere = 'C:\Example\OutTest.html'
+$JSONdata = Get-Content $DataFile | ConvertFrom-Json
 
 ############################################################## Common functions
 function Get-TrueOrFalse { 
